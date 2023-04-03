@@ -1,0 +1,1649 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf)
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #3A364C;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    background: #fff;
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*---------------------------------
+
+            HEADER
+
+---------------------------------*/
+
+.header {
+    position: relative;
+    background-color: #FFA3B0;
+    z-index: 10;
+}
+
+.header__container {
+    display: flex;
+    max-width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.header__pictures-wrap {
+    position: relative;
+    flex-basis: 50%;
+}
+
+.header__pictures {
+    position: absolute;
+    top: -90px;
+    left: -51px;
+}
+
+img.header__centella {
+    width: 235px;
+    transform: rotate(23deg);
+    filter: sepia(53%) blur(5px);
+}
+
+img.header__kettox {
+    width: 123px;
+    position: absolute;
+    top: 95px;
+    left: 41px;
+}
+
+.header__text {
+    display: flex;
+    flex-basis: 50%;
+    padding: 18px 0px;
+    justify-content: flex-end;
+}
+
+.header__text p {
+    max-width: 168px;
+    margin-left: 79px;
+}
+
+.header__text_mobile {
+    display: none;
+}
+
+/*---------------------------------
+
+            UPPER FORM
+
+---------------------------------*/
+
+.upper-form__circle {
+    max-width: 1220px;
+    MARGIN: AUTO;
+    POSITION: RELATIVE;
+}
+
+.upper-form__big-circle {
+    width: 583px;
+    height: 583px;
+    top: -266px;
+    left: -85px;
+    position: absolute;
+    border-radius: 500px;
+    background-color: #FFD0D6;
+    z-index: 1;
+}
+
+.upper-form__small-circle {
+    width: 410px;
+    height: 410px;
+    top: -207px;
+    left: 606px;
+    position: absolute;
+    border-radius: 500px;
+    background-color: #FFD0D6;
+    z-index: 1;
+}
+
+.upper-form {
+    background-color: #FDEAE1;
+    padding-top: 35px;
+    padding-bottom: 70px;
+}
+
+.upper-form__wrap.feedback {
+    display: flex;
+    max-width: 1216px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.feedback__description {
+    flex-basis: 50%;
+    position: relative;
+    padding-top: 10px;
+}
+
+.feedback__main-text {
+    z-index: 10;
+    position: relative;
+    max-width: 580px;
+}
+
+.feedback__main-text span {
+    font-size: 23px;
+    position: absolute;
+    top: -10px;
+}
+
+.feedback__main-text p {
+    max-width: 512px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    line-height: 1.3;
+}
+
+.feedback__basic-properties {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.feedback__pill img {
+    max-width: 205px;
+    margin: -42px -45px -40px -46px;
+}
+
+.feedback__detail-properties {
+    max-width: 370px;
+}
+
+.feedback__detail-properties li {
+    font-size: 16px;
+    padding: 16px 0px;
+}
+
+.kettox-pills {
+    top: 126px;
+    left: 427px;
+    position: absolute;
+    z-index: 1;
+}
+
+.kettox-pills img {
+    max-width: 530px;
+}
+
+.feedback__form-wrap {
+    flex-basis: 50%;
+    position: relative;
+    z-index: 10;
+}
+
+.feedback__form {
+    width: 381px;
+    height: 560px;
+    border-radius: 10px;
+    float: right;
+    padding: 20px 32px 45px 32px;
+    background-color: #fff;
+    box-shadow: 0px 20px 25px rgb(0 0 0 / 40%);
+}
+
+.form__red-span {
+    max-width: 250px;
+    margin: auto;
+}
+
+.form__red-span>p {
+    font-size: 14px;
+    color: #CF1647;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 1.5;
+}
+
+.form__prices {
+    max-width: 281px;
+    margin: 32px auto 0px auto;
+    padding-right: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__price {
+    color: #A7A7A7;
+    position: relative;
+}
+
+.form__price:nth-child(2) {
+    color: #5e5e5e;
+}
+
+.form__price p {
+    margin-bottom: 7px;
+}
+
+.form__old-price {
+    font-size: 15px;
+}
+
+.form__new-price {
+    position: relative;
+    left: -5px;
+    font-size: 26px;
+    color: #FF6107;
+}
+
+.form__crossed-line {
+    top: 27px;
+    position: absolute;
+    width: 58px;
+    height: 2px;
+    background-color: #A7A7A7;
+}
+
+.form form span {
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 6px;
+    margin-left: 7px;
+}
+
+.form form input {
+    display: block;
+    width: 100%;
+    padding: 11px 15px;
+    border-radius: 5px;
+    border: 1px solid #a7a7a7;
+    background-color: #f2f2f2;
+}
+
+.form form span.form__for-mobile {
+    display: none;
+}
+
+form span.form__quantity {
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 21px;
+    margin-left: 0px;
+    color: #A7A7A7;
+    line-height: 1.3;
+}
+
+
+.form__submit-btn button {
+    width: 100%;
+    padding: 18px 0px;
+    border-radius: 50px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #FF6107;
+}
+
+.form__notice {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 25px;
+    padding: 0px 10px;
+}
+
+.form__notice p {
+    max-width: 260px;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #e7e7e7;
+}
+
+/*---------------------------------
+
+            STAGES
+
+---------------------------------*/
+
+section.stages {
+    padding: 65px 0px 105px 0px;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.stages__buttons {
+    display: none;
+}
+
+.stages h2 {
+    text-align: center;
+    margin-bottom: 82px;
+}
+
+.stages__examples {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stages__description.description {
+    width: 384px;
+    height: 600px;
+    /* flex-basis: 31.5%; */
+    border: 1px solid #FE78B3;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.description_text {
+    padding: 32px 32px 10px 32px;
+}
+
+.description_text h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 34px;
+    color: #FE78B3;
+    text-align: center;
+}
+
+.description_text ul {
+    padding-top: 3px;
+    padding-left: 23px;
+    position: relative;
+}
+
+.description_text li {
+    padding: 0px 0px 20px 46px;
+    min-height: 50px;
+    font-size: 16px;
+    position: relative;
+}
+
+.description_text li::before {
+    content: "● ";
+    position: absolute;
+    left: 0;
+    color: #fe78b3;
+    font-size: 50px;
+    top: -19px;
+}
+
+.description_img {
+    width: 100%;
+    position: absolute;
+    bottom: -3px;
+    text-align: center;
+}
+
+.description__line {
+    width: 100%;
+    height: 79px;
+    bottom: 132px;
+    position: absolute;
+    background-color: #fe80b3;
+    z-index: 1;
+}
+
+.description_img img {
+    max-height: 369px;
+    position: relative;
+    z-index: 10;
+}
+
+/*---------------------------------
+
+            COMPOUND
+
+---------------------------------*/
+
+section.lower-form {
+    padding-top: 66px;
+    padding-bottom: 70px;
+    position: relative;
+    background-color: #FDEAE1;
+    overflow: hidden;
+}
+
+section.compound {
+    padding: 70px 0 58px 0;
+    background-color: #FFA3B0;
+    position: relative;
+    z-index: 10;
+}
+
+.compound__circle {
+    position: absolute;
+    top: 225px;
+    left: -20px;
+    right: 0;
+    margin: 0 auto;
+    width: 480px;
+    height: 480px;
+    border-radius: 400px;
+    background-color: #fdeae17d;
+    z-index: 1;
+}
+
+.circle__hot-pink {
+    width: 330px;
+    height: 330px;
+    border-radius: 300px;
+    top: 79px;
+    position: relative;
+    margin: auto;
+    background-color: #fdeae17a;
+    transform: rotate(45deg);
+}
+
+.circle__white {
+    width: 135px;
+    height: 285px;
+    margin: auto;
+    top: 11px;
+    left: -10px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 95px;
+}
+
+.circle__img {
+    margin: auto;
+}
+
+.circle__img img {
+    width: 250px;
+    position: absolute;
+    top: -43px;
+    left: -58px;
+    transform: rotate(3deg);
+}
+
+.compound__container {
+    max-width: 1047px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+.compound__container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.compound__container>p {
+    max-width: 715px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.compound__columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.columns__cards {
+    flex-basis: 48.7%;
+    padding-right: 25px;
+}
+
+.columns__card_left {
+    float: left;
+    padding: 20px 21px !important;
+}
+
+.columns__card_right {
+    float: right;
+}
+
+.columns__card {
+    width: 301px;
+    height: 195px;
+    display: flex;
+    padding: 30px 20px;
+    margin-bottom: 28px;
+    border-radius: 60px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.card__img {
+    position: relative;
+    top: -3px;
+    left: -22px;
+}
+
+.card__circle {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: #FFA3B0;
+    z-index: 1;
+}
+
+.card__img img {
+    max-height: 100px;
+    top: -5px;
+    left: 3px;
+    position: relative;
+    z-index: 10;
+}
+
+.card__text {
+    margin-left: -18px;
+    margin-right: 1px;
+}
+
+.card__text b {
+    font-size: 16px;
+    display: inline-block;
+    max-width: 150px;
+    margin-bottom: 5px;
+}
+
+.card__text p {
+    line-height: 1.4;
+}
+
+.columns__card_reverse {
+    flex-direction: row-reverse;
+    padding: 0px 26px;
+}
+
+/**/
+
+.columns__card_reverse .card__text {
+    margin-left: unset;
+    margin-right: unset;
+}
+
+.columns__cards.columns__cards_left {
+    padding-right: 0;
+}
+
+.columns__card_reverse .card__img {
+    top: -4px;
+    left: 20px;
+    position: relative;
+}
+
+/*---------------------------------
+
+            LOWER FORM
+
+---------------------------------*/
+
+.lower-form__wrap.feedback {
+    display: flex;
+    max-width: 1216px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.feedback__description {
+    flex-basis: 50%;
+    position: relative;
+    /* padding-top: 10px; */
+}
+
+.feedback__main-text {
+    z-index: 10;
+    position: relative;
+    max-width: 580px;
+}
+
+.feedback__main-text span {
+    font-size: 23px;
+    position: absolute;
+    top: -10px;
+}
+
+.feedback__main-text p {
+    max-width: 512px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    line-height: 1.3;
+}
+
+.feedback__basic-properties {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.feedback__pill img {
+    max-width: 205px;
+    margin: -42px -45px -40px -46px;
+}
+
+.feedback__detail-properties {
+    max-width: 370px;
+}
+
+.feedback__detail-properties li {
+    font-size: 16px;
+    padding: 16px 0px;
+}
+
+.lower-form__kettox-pills {
+    position: absolute;
+    top: 120px;
+    left: 411px;
+    z-index: 10;
+}
+
+.lower-form__kettox-pills img {
+    max-width: 583px;
+    position: absolute;
+}
+
+.feedback__form-wrap {
+    flex-basis: 50%;
+    position: relative;
+    z-index: 10;
+}
+
+.feedback__form {
+    width: 381px;
+    height: 560px;
+    border-radius: 10px;
+    float: right;
+    padding: 20px 32px 45px 32px;
+    background-color: #fff;
+    box-shadow: 0px 20px 25px rgb(0 0 0 / 40%);
+}
+
+.form__red-span {
+    max-width: 250px;
+    margin: auto;
+}
+
+.form__red-span>p {
+    font-size: 14px;
+    color: #CF1647;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 1.5;
+}
+
+.form__price {
+    color: #A7A7A7;
+    position: relative;
+}
+
+.form__price p {
+    margin-bottom: 7px;
+}
+
+.form__old-price {
+    font-size: 15px;
+}
+
+.form__new-price {
+    position: relative;
+    left: -5px;
+    font-size: 26px;
+    color: #FF6107;
+}
+
+.form__crossed-line {
+    top: 27px;
+    position: absolute;
+    width: 58px;
+    height: 2px;
+    background-color: #A7A7A7;
+}
+
+.form form span {
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 6px;
+    margin-left: 7px;
+}
+
+.form form input {
+    display: block;
+    width: 100%;
+    padding: 11px 15px;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    background-color: #f2f2f2;
+}
+
+form span.form__quantity {
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 21px;
+    margin-left: 0px;
+    color: #A7A7A7;
+    line-height: 1.3;
+}
+
+
+.form__submit-btn button {
+    width: 100%;
+    padding: 18px 0px;
+    border-radius: 50px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #FF6107;
+}
+
+.form__notice {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 25px;
+    padding: 0px 10px;
+}
+
+.form__notice p {
+    max-width: 260px;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #e7e7e7;
+}
+
+.lower-form__circle {
+    max-width: 1220px;
+    margin: auto;
+    position: relative;
+}
+
+.lower-form__big-circle {
+    width: 584px;
+    height: 580px;
+    top: 52px;
+    left: -156px;
+    position: absolute;
+    border-radius: 500px;
+    background-color: #FFD0D6;
+    z-index: 1;
+}
+
+.lower-form__small-circle {
+    width: 410px;
+    height: 410px;
+    top: -56px;
+    left: 575px;
+    position: absolute;
+    border-radius: 500px;
+    background-color: #FFD0D6;
+    z-index: 1;
+}
+
+@media (max-width: 1350px) {
+
+    .header {
+        position: relative;
+        background-color: #FFA3B0;
+        z-index: 10;
+        padding: 0px 80px;
+    }
+
+    .header__text p {
+        margin-left: 50px;
+    }
+
+    .upper-form {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .upper-form__big-circle {
+        width: 51vw;
+        height: 51vw;
+    }
+
+    .upper-form__small-circle {
+        width: 27vw;
+        height: 27vw;
+    }
+
+    .kettox-pills {
+        left: 395px;
+    }
+
+    section.stages {
+        padding: 65px 80px 105px 80px;
+    }
+
+    section.compound {
+        padding: 70px 80px 58px 80px;
+    }
+
+    section.lower-form {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .lower-form__big-circle {
+        width: 51vw;
+        height: 51vw;
+    }
+
+    .lower-form__small-circle {
+        width: 36vw;
+        height: 36vw;
+    }
+
+
+    .stages__description.description {
+        width: 330px;
+        height: 600px;
+    }
+
+    .description_text {
+        padding: 25px 10px 10px 10px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .discount {
+        display: none !important;
+    }
+
+    .hidden-bloks{
+        display: none !important;
+    }
+
+    section.stages {
+        padding: 65px 20px 105px 20px;
+    }
+
+    .stages__max-width {
+        width: 450px;
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+    }
+
+    .stages__buttons {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        position: absolute;
+        top: 415px;
+        width: 450px;
+        z-index: 20;
+        padding: 0 20px;
+    }
+
+    .stages__max-width button {
+        background: unset;
+    }
+
+    .stages__max-width button img {
+        width: 25px;
+        height: 40px;
+    }
+
+    .stages__examples {
+        left: 0;
+        height: 600px;
+        position: relative;
+        display: block;
+        transition: all .3s;
+    }
+
+    .stages__description.description {
+        width: 450px;
+        height: 600px;
+        float: left;
+        margin-right: 70px;
+    }
+
+    .stages__description.description:last-child {
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 1095px) {
+    .kettox-pills img {
+        display: none;
+    }
+
+    section.compound {
+        padding: 70px 50px 58px 50px;
+    }
+
+    .lower-form__kettox-pills img {
+        display: none;
+    }
+
+    .feedback__description {
+        flex-basis: 53%;
+        position: relative;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .header__container {
+        display: unset;
+    }
+
+    .header__pictures-wrap {
+        display: none;
+    }
+
+    .header__text {
+        text-align: center;
+        display: block;
+        padding: 16px 0px;
+    }
+
+    .header__text p {
+        display: none;
+        max-width: unset;
+        margin-left: unset;
+    }
+
+    .header__text p.header__text_mobile {
+        display: inline;
+        color: #FFF;
+    }
+
+    main.page {
+        overflow: hidden;
+    }
+
+    .upper-form {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    .upper-form__wrap.feedback {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feedback__description {
+        flex-basis: 100%;
+    }
+
+    .feedback__main-text {
+        text-align: center;
+        margin: auto;
+    }
+
+    .feedback__main-text p {
+        max-width: unset;
+        margin-top: 30px;
+    }
+
+    .kettox-pills img {
+        display: block;
+        max-width: 500px;
+        margin: -70px auto -60px auto;
+    }
+
+    .kettox-pills {
+        position: static;
+    }
+
+    .feedback__pill img {
+        display: none;
+    }
+
+    .feedback__basic-properties {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .feedback__detail-properties {
+        max-width: 450px;
+    }
+
+    .feedback__detail-properties li {
+        position: relative;
+        padding: 0px 0px 30px 46px;
+    }
+
+    .feedback__detail-properties li::before {
+        content: "● ";
+        position: absolute;
+        left: 0;
+        color: #fe78b3;
+        font-size: 50px;
+        top: -19px;
+    }
+
+    .feedback__form {
+        width: 450px;
+    }
+
+    .compound__circle {
+        display: none;
+    }
+
+    .columns__cards {
+        flex-basis: 50%;
+        padding-right: unset;
+    }
+
+    .columns__card_right {
+        float: unset;
+    }
+
+    .columns__card_left {
+        float: unset;
+    }
+
+    .columns__cards {
+        flex-basis: unset;
+    }
+
+    .columns__card {
+        margin-bottom: 40px;
+    }
+
+    .compound__columns {
+        justify-content: space-evenly;
+    }
+
+    .lower-form__wrap.feedback {
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 10;
+    }
+
+    .lower-form__kettox-pills {
+        position: static;
+    }
+
+    .lower-form__kettox-pills img {
+        display: block;
+        position: relative;
+        max-width: 500px;
+        margin: -70px auto -60px auto;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .feedback__main-text h1 {
+        padding: 0px 45px;
+    }
+
+    .feedback__main-text p {
+        padding: 0px 70px;
+    }
+
+    .compound__columns {
+        flex-wrap: wrap;
+    }
+
+    .columns__cards {
+        flex-basis: 100%;
+    }
+
+    .columns__card {
+        margin-bottom: 40px;
+        margin: 0px auto 20px auto;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .upper-form__big-circle{
+        width: 375px;
+        height: 375px;
+        top: 260px;
+        left: -150px;
+    }
+
+    .upper-form__small-circle{
+        width: 270px;
+        height: 270px;
+        top: -40px;
+        left: 200px;
+    }
+
+    .upper-form {
+        padding-bottom: 0px;
+    }
+
+    .feedback__main-text h1 {
+        font-size: 22px;
+    }
+
+    .feedback__main-text span {
+        position: static;
+    }
+
+    .feedback__main-text p {
+        margin-top: 20px;
+        margin-bottom: 72px;
+    }
+
+    .kettox-pills {
+        position: relative;
+        top: 0;
+        left: 50px;
+    }
+
+    .kettox-pills img {
+        display: block;
+        max-width: 500px;
+        margin: -70px auto -60px auto;
+    }
+
+    .feedback__basic-properties {
+        padding: 0px 80px;
+    }
+
+    .feedback__form-wrap {
+        flex-basis: 100%;
+    }
+
+    .feedback__form {
+        width: 100%;
+        border-radius: unset;
+        box-shadow: unset;
+    }
+
+    .form__prices {
+        max-width: unset;
+        margin: unset;
+        margin-top: 32px;
+    }
+
+    .form__new-price {
+        color: #DB484B;
+    }
+
+    .form form span {
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    .form form span.form__for-mobile {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+        margin-left: unset;
+        text-align: center;
+    }
+
+    form span.form__quantity {
+        display: none;
+    }
+
+    .form__notice {
+        display: none;
+    }
+
+    .stages h2 {
+        font-size: 22px;
+        margin-bottom: 30px;
+        padding: 0px 10px;
+    }
+
+    section.stages {
+        padding: 0px 10px 25px 10px;
+    }
+
+    .stages__max-width {
+        width: 300px;
+    }
+
+    .stages__buttons {
+        width: 300px;
+        top: 360px;
+        padding: 0 10px;
+    }
+
+    .stages__max-width button {
+        width: 40px;
+        height: 50px;
+    }
+
+    .stages__max-width button img {
+        width: 15px;
+        height: 28px;
+    }
+
+    .stages__examples {
+        left: 0;
+        height: 600px;
+        position: relative;
+        display: block;
+        transition: all .3s;
+    }
+
+    .description_text h3 {
+        margin-bottom: 21px;
+    }
+
+    .description_text li {
+        font-size: 14px;
+    }
+
+    .stages__description.description {
+        width: 300px;
+        height: 516px;
+        float: left;
+        margin-right: 70px;
+    }
+
+    .stages__description.description:last-child {
+        margin-right: 0;
+    }
+
+    .description_text {
+        padding: 35px 10px 10px 10px;
+    }
+
+    .description__line {
+        height: 69px;
+        bottom: 102px;
+    }
+
+    .description_img img {
+        max-height: 284px;
+    }
+
+    section.compound {
+        padding: 45px 10px 24px 10px;
+    }
+
+    .compound__container h2 {
+        padding: 0px 30px;
+        font-size: 22px;
+    }
+
+    .compound__container>p {
+        padding: 0px 50px;
+        text-align: left;
+    }
+
+    section.lower-form {
+        padding: 45px 0 0 0;
+    }
+
+    .lower-form__kettox-pills {
+        position: relative;
+        top: 0;
+        left: 50px;
+    }
+
+    .lower-form__kettox-pills img {
+        display: block;
+        max-width: 500px;
+        margin: -70px auto -60px auto;
+    }
+
+    .lower-form__big-circle{
+        width: 375px;
+        height: 375px;
+        top: 260px;
+        left: -150px;
+    }
+
+    .lower-form__small-circle{
+        width: 270px;
+        height: 270px;
+        top: -40px;
+        left: 200px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .header {
+        padding: 0px 40px;
+    }
+
+    .header__text p.header__text_mobile {
+        font-size: 12px;
+    }
+
+    .feedback__main-text {
+        max-width: 320px;
+    }
+
+    .feedback__main-text h1 {
+        padding: 0px 20px;
+    }
+
+    .feedback__main-text p {
+        padding: 20px 20px 72px 20px;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .kettox-pills img {
+        max-width: 430px;
+    }
+
+    .kettox-pills {
+        left: 47px;
+    }
+
+    .feedback__basic-properties {
+        padding: 0px 37px;
+        max-width: 320px;
+        margin: auto;
+    }
+
+    .feedback__detail-properties li {
+        font-size: 14px;
+    }
+
+    .form__red-span>p {
+        color: #000;
+    }
+
+    .feedback__form {
+        padding: 20px 15px 45px 15px;
+    }
+
+    .compound__container h2 {
+        padding: 0px 10px;
+    }
+
+    .compound__container>p {
+        padding: 0px 10px;
+    }
+
+    .lower-form__kettox-pills img {
+        max-width: 440px;
+    }
+
+    .lower-form .feedback__form {
+        height: 520px;
+    }
+
+    .lower-form .form__submit-btn {
+        margin: 0 -7px;
+    }
+
+
+}
+
+.discount {
+    display: none;
+    width: 1008px;
+    height: 648px;
+    position: fixed;
+    top: 25px;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 99;
+    background: #ababab;
+    box-shadow: 0px 20px 25px rgb(0 0 0 / 40%);
+}
+
+#close{
+    font-size: 20px;
+    padding: 6px 11px;
+    position: absolute;
+    right: 0;
+    background-color: #ff6107;
+    color: #fff;
+    cursor: pointer;
+}
+
+.discount__img {
+    flex-basis: 50%;
+    height: 100%;
+    background-color: #FFA3B0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.discount__img img {
+    max-width: 450px;
+}
+
+.discount__time {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 30px 60px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.discount__bit-clock.bit-clock {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.bit-clock__time {
+    width: 96px !important;
+    height: 96px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #FFBC53;
+}
+
+.discount__time h3 {
+    margin-bottom: 18px;
+}
+
+.bit-clock__dots {
+    font-family: 'Roboto';
+    font-size: 64px;
+    font-weight: 900;
+    margin: 0 10px;
+    position: relative;
+    top: -5px;
+}
+
+div.bit-clock__time p {
+    color: #fff;
+}
+
+.discount__time>p {
+    color: #FF003D;
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+    font-weight: 700;
+}
+
+.discount__price {
+    margin-bottom: 17px;
+}
+
+.discount__price p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.discount__price span {
+    color: #FF003D;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.bit-clock__time span {
+    flex-basis: 100%;
+    margin-bottom: 0px;
+    font-size: 53px;
+    font-family: 'ROBOTO';
+    font-weight: 900;
+}
+
+.bit-clock__dots {}
+
+.discount__time form span {
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 6px;
+    margin-left: 7px;
+}
+
+.discount__time form input {
+    display: block;
+    width: 100%;
+    padding: 11px 15px;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    background-color: #f2f2f2;
+}
+
+.discount__time form {
+    text-align: left;
+}
+
+.discount__submit-btn {
+    margin-top: 25px;
+}
+
+.discount__submit-btn button {
+    width: 100%;
+    padding: 18px 0px;
+    border-radius: 50px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #FF6107;
+}
+
+.discount__sale {
+    text-align: center;
+}
+
+form .discount__sale span {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.hidden-bloks__elem{
+    position: fixed;
+    top: 0;
+    right: -400px;
+    max-width:350px;
+    height: min-content;
+    padding: 15px 30px 15px 20px;
+    margin: 30px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: 1s;
+    color: white;
+    background: rgb(255,17,206);
+    background: linear-gradient(144deg, rgba(255,17,206,1) 0%, rgba(255,37,152,1) 80%);
+    z-index: 999;
+}
+
+.hidden-elem__count{
+    font-size: 25px;
+    margin: 0;
+    margin-top: 10px;
+}
+.hidden-elem__main{
+    display: flex;
+    max-height: 100px;
+}
+
+.hidden-elem__img{
+    margin-right: 13px;
+}
+
+.hidden-elem__im{
+ width: 40px;
+ height: 40px;
+}
+
+.hidden-elem__txt{
+    margin: 0;
+    padding-top: 5px;
+    width: 195px;
+    line-height: 1.3;
+}
+
+.hidden-elem__cr{
+    color: white;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 14px;
+    top: 7px;
+    font-size: 17px;
+    cursor: pointer;
+}
