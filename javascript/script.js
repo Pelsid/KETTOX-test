@@ -94,3 +94,6 @@ function Dead(elem){
 function Rand(){
     n = Math.floor(Math.random() * 3 + 1);
 }
+
+//link to the layout
+console.log('link to the layout ' + 'https://www.figma.com/file/s4RpBylknGLcD9a1J7JXHI/KETTOX_N(1)?node-id=29-0');
